@@ -58,11 +58,19 @@
     <script type="text/javascript" src="jquery.mobile/jquery-1.7.1.min.js"></script>
     <!-- The below script turns on the automatic back buttons sitewide. To turn them off remove the script. It must be located before jquery.mobile is called -->
    <script type="text/javascript">
-
-    $(document).bind("mobileinit", function(){
-        $.mobile.page.prototype.options.addBackBtn= true;
-    });
-</script>
+	var ua = navigator.userAgent.toLowerCase();
+	var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+	if(isAndroid) {
+	  // do not put back button in this case because of the awesomeness that is droid native navigation
+	}
+	else
+	{
+		// we must provide for the lesser needy mobile devices here
+		$(document).bind("mobileinit", function(){
+			$.mobile.page.prototype.options.addBackBtn= true;
+		});
+	}
+	</script>
  
        
   
