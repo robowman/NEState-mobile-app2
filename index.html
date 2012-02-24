@@ -139,23 +139,23 @@
                   <div data-role="content" id="dashboard">	
               
               <fieldset class="ui-grid-b">              
-                <div class="ui-block-a"> <a href="#" onClick="checkConnection(); window.plugins.childBrowser.showWebPage('http://apps.northeaststate.edu/mobile/directory.html', { showLocationBar: true });" rel="external" onclick="checkConnection();"><img src="dashboard/directory-57.png" width="57" height="57"/></a><div class="icontext">Directory</div>
+                <div class="ui-block-a"> <a href="#" onClick="checkConnection(); window.plugins.childBrowser.showWebPage('http://apps.northeaststate.edu/mobile/directory.html', { showLocationBar: true });"><img src="dashboard/directory-57.png" width="57" height="57"/></a><div class="icontext">Directory</div>
                 </div>
                 <div class="ui-block-b"> <a href="#maps"><img src="dashboard/maps-57.png" width="57" height="57"/></a><div class="icontext">Maps</div>
                 </div>
-                <div class="ui-block-c"> <a href="http://apps.northeaststate.edu/mobile/news/site.php" rel="external" onclick="checkConnection();"><img src="dashboard/news-57.png" width="57" height="57"/></a><div class="icontext">News</div>
+                <div class="ui-block-c"><a href="#" onClick="checkConnection(); window.plugins.childBrowser.showWebPage('http://apps.northeaststate.edu/mobile/news/site.php', { showLocationBar: true });"><img src="dashboard/news-57.png" width="57" height="57"/></a><div class="icontext">News</div>
                 </div>
                 <div class="ui-block-a"> <a href="pages/sites.html" rel="external" ><img src="dashboard/sites-57.png" width="57" height="57"/></a><div class="icontext">Campus Sites</div>
                 </div>
                 <div class="ui-block-b"> <a href="pages/library.html" rel="external" ><img src="dashboard/library-57.png" width="57" height="57"/></a><div class="icontext">Library</div>
                 </div>
-                <div class="ui-block-c"> <a href="http://m.facebook.com/northeaststate?view=wall&refid=0"  rel="external" onclick="checkConnection();"><img src="dashboard/facebook-57.png" width="57" height="57"/></a><div class="icontext">Facebook</div>
+                <div class="ui-block-c"> <a href="#" onClick="checkConnection(); window.plugins.childBrowser.showWebPage('http://m.facebook.com/northeaststate?view=wall&refid=0', { showLocationBar: false });"><img src="dashboard/facebook-57.png" width="57" height="57"/></a><div class="icontext">Facebook</div>
                 </div>
                 <div class="ui-block-a"> <a href="pages/twitter.html" rel="external" onclick="checkConnection();"><img src="dashboard/twitter-57.png" width="57" height="57"/></a><div class="icontext">Twitter</div>
                 </div>
                 <div class="ui-block-b"> <a href="http://www.youtube.com/user/NortheastStateVideo" rel="external" onclick="checkConnection();" target="_blank"><img src="dashboard/youtube-57.png" width="57" height="57"/></a><div class="icontext">YouTube</div>
                 </div>
-                 <div class="ui-block-b"> <a href="https://banssprod.northeaststate.edu" rel="external" onclick="checkConnection();" target="_blank"><img src="dashboard/Norstar-57.png" width="57" height="57"/></a><div class="icontext">NORSTAR</div>
+                 <div class="ui-block-b"> <a href="#" onClick="checkConnection(); window.plugins.childBrowser.showWebPage('https://banssprod.northeaststate.edu', { showLocationBar: false });"><img src="dashboard/Norstar-57.png" width="57" height="57"/></a><div class="icontext">NORSTAR</div>
                 </div>
             </fieldset>
               
@@ -181,20 +181,8 @@
           <div data-role="content">
               
               <ul data-role="listview" data-inset="true">
-                  
-                  <!-- Main Campus Map -->
-                  <script type="text/javascript">
-                   
-                          document.write("<li><a href=\"http:\/\/apps.northeaststate.edu\/mobile\/maincampusmap.html\" rel=\"external\" target=\"_blank\">Main Campus<\/a><\/li>");
-                    
-                      </script>
-                  
-                  <!-- Kingsport Map -->
-                  <script type="text/javascript">
-                   
-                          document.write("<li><a href=\"http:\/\/apps.northeaststate.edu\/mobile\/kingsportmap.html\" rel=\"external\" target=\"_blank\">Kingsport<\/a><\/li>");
-                     
-                      </script>
+                  <li> <a href="#" onClick="checkConnection(); window.plugins.childBrowser.showWebPage('http://apps.northeaststate.edu/mobile/maincampusmap.html', { showLocationBar: false });">Main Campus </a> </li>
+                  <li> <a href="#" onClick="checkConnection(); window.plugins.childBrowser.showWebPage('http://apps.northeaststate.edu/mobile/kingsportmap.html', { showLocationBar: false });">Kingsport </a> </li>      
                   
               </ul>	
 
