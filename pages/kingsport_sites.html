@@ -110,6 +110,18 @@
       <!-- Start of Kingsport page -->
       <div data-role="page" id="kingsport">
           <div data-role="header" data-theme="b">
+           <script type="text/javascript">
+		var ua = navigator.userAgent.toLowerCase();
+		var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+		if(isAndroid) {
+		  // do not put back button in this case because of the awesomeness that is droid native navigation
+		}
+		else
+		{
+			// we must provide for the lesser needy mobile devices here
+			document.write("<a data-rel=\"back\" data-icon=\"arrow-l\">Back<\/a>");
+		}
+		</script>
               <h1>Kingsport</h1>
           </div><!-- /header -->
           

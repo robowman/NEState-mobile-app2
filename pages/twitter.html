@@ -82,6 +82,18 @@ border-bottom:solid;
 <body>
 <div data-role="page" id="page">
   <div data-role="header" data-theme="b" data-position="fixed">
+   <script type="text/javascript">
+		var ua = navigator.userAgent.toLowerCase();
+		var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+		if(isAndroid) {
+		  // do not put back button in this case because of the awesomeness that is droid native navigation
+		}
+		else
+		{
+			// we must provide for the lesser needy mobile devices here
+			document.write("<a data-rel=\"back\" data-icon=\"arrow-l\">Back<\/a>");
+		}
+		</script>
     <h1>Twitter</h1>
  
   </div>

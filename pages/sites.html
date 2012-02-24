@@ -102,53 +102,62 @@
            
             
   </head>
-  <body>
-  	  
-      
-    
-                      
-                      
-                      <!-- Start of Off-Campus Sites page -->
-                      <div data-role="page" id="sites">
-                      <div data-role="header" data-theme="b">
-                      <h1>Off-Campus Sites</h1>
-                      </div><!-- /header -->
-                      
-                      <div data-role="content">
-                      <ul data-role="listview" data-inset="true">
-                      
-                      <li><a href="#elizabethton">Elizabethton</a></li>
-                      
-                      <li><a href="#gray">Gray</a></li>
-                      
-                      <li><a href="kingsport_sites.html" rel="external">Kingsport</a></li>   
-                      
-                      <li><a href="#mountaincity">Mountain City ITV Site</a></li> 
-                      <li><a href="#unicoi">Unicoi ITV Site</a></li>
-                      
-                      </ul>	
-                      </div><!-- /content -->
-                      
-                      </div><!-- /Off-Campus Sites page -->
-                      
-                      
-                      <!-- Start of Elizabethton page -->
-                      <div data-role="page" id="elizabethton">
-                      <div data-role="header" data-theme="b">
-                      <h1>Elizabethton</h1>
-                      </div><!-- /header -->
-                      
-                      <div data-role="content">
-                     
-                      <div class="sitesblurb"><p>Offers Day and Evening classes. The site offers a variety of courses in liberal arts, technical, and continuing education programs.</p></div>
-                      <a href="tel:4235478450" data-role="button" data-icon="arrow-r" data-iconpos="right">Call</a>
-                      <a href="mailto:cykyoung@northeaststate.edu" data-role="button" onclick="checkConnection();" data-icon="arrow-r" data-iconpos="right">Email</a>
-                      <a href="#" onClick="checkConnection(); window.plugins.childBrowser.showWebPage('http://maps.google.com/maps?q=386+Highway+91+North,+Elizabethton,+TN+37643&hl=en&sll=36.351179,-82.229293&sspn=0.011734,0.019741&vpsrc=0&t=h&z=16', { showLocationBar: true });" data-role="button" data-icon="arrow-r" data-iconpos="right" >Directions </a>
-                      <div class="loctext"><h4>Location:</h4>386 Highway 91 North<br />Elizabethton, TN 37643</div>
-                      
-                      </div><!-- /content -->
-                      
-                      </div><!-- /Elizabethton page -->
+  <body>  
+        
+        
+        <!-- Start of Off-Campus Sites page -->
+        <div data-role="page" id="sites">
+        <div data-role="header" data-theme="b">
+        <script type="text/javascript">
+	  var ua = navigator.userAgent.toLowerCase();
+	  var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+	  if(isAndroid) {
+		// do not put back button in this case because of the awesomeness that is droid native navigation
+	  }
+	  else
+	  {
+		  // we must provide for the lesser needy mobile devices here
+		  document.write("<a data-rel=\"back\" data-icon=\"arrow-l\">Back<\/a>");
+	  }
+	  </script>
+        <h1>Off-Campus Sites</h1>
+        </div><!-- /header -->
+        
+        <div data-role="content">
+        <ul data-role="listview" data-inset="true">
+        
+        <li><a href="#elizabethton">Elizabethton</a></li>
+        
+        <li><a href="#gray">Gray</a></li>
+        
+        <li><a href="kingsport_sites.html" rel="external">Kingsport</a></li>   
+        
+        <li><a href="#mountaincity">Mountain City ITV Site</a></li> 
+        <li><a href="#unicoi">Unicoi ITV Site</a></li>
+        
+        </ul>	
+        </div><!-- /content -->
+        
+        </div><!-- /Off-Campus Sites page -->
+        
+        
+        <!-- Start of Elizabethton page -->
+        <div data-role="page" id="elizabethton">
+        <div data-role="header" data-theme="b">
+        <h1>Elizabethton</h1>
+        </div><!-- /header -->
+        
+        <div data-role="content">
+        
+        <div class="sitesblurb"><p>Offers Day and Evening classes. The site offers a variety of courses in liberal arts, technical, and continuing education programs.</p></div>
+        <a href="tel:4235478450" data-role="button" data-icon="arrow-r" data-iconpos="right">Call</a>
+        <a href="mailto:cykyoung@northeaststate.edu" data-role="button" onclick="checkConnection();" data-icon="arrow-r" data-iconpos="right">Email</a>
+        <a href="#" onClick="checkConnection(); window.plugins.childBrowser.showWebPage('http://maps.google.com/maps?q=386+Highway+91+North,+Elizabethton,+TN+37643&hl=en&sll=36.351179,-82.229293&sspn=0.011734,0.019741&vpsrc=0&t=h&z=16', { showLocationBar: true });" data-role="button" data-icon="arrow-r" data-iconpos="right" >Directions </a>
+        <div class="loctext"><h4>Location:</h4>386 Highway 91 North<br />Elizabethton, TN 37643</div>
+        
+        </div><!-- /content -->
+        
+        </div><!-- /Elizabethton page -->
       
       <!-- Start of Gray page -->
       <div data-role="page" id="gray">
