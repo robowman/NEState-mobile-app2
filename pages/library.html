@@ -97,15 +97,15 @@
   	  <!-- Start of Library page -->
      <div data-role="page" id="library">
                       
-       <div data-role="header" data-theme="b">
+       <div data-role="header" data-theme="b"><a data-rel="back" data-icon="arrow-l" >Back</a>
                       <h1>Library</h1>
                       </div><!-- /header -->
                       
                       <div data-role="content">	
                       <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b"> 
-                      <li><a href="http://apps.northeaststate.edu/mobile/hours.php" rel="external" onclick="checkConnection();">Hours</a></li> 
+                      <li><a href="#" onClick="checkConnection(); window.plugins.childBrowser.showWebPage('http://apps.northeaststate.edu/mobile/hours.php', { showLocationBar: true });">Hours</a></li> 
                       <li><a href="#askalibrarian">Ask-A-Librarian</a></li> 
-                          <li><a href="http://m.libraries.etsu.edu/patroninfo" rel="external" target="_blank">My Library Account</a></li>
+                      <li><a href="#" onClick="checkConnection(); window.plugins.childBrowser.showWebPage('http://m.libraries.etsu.edu/patroninfo', { showLocationBar: true });">My Library Account</a></li> 
                       <li><a href="#research">Research</a></li> 
                       </ul> 
                       </div><!-- /content -->
@@ -124,8 +124,6 @@
                       <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b"> 
                       <li><a href="tel:4233542458">Call: 423.354.2458</a></li> 
                       <li><a href="mailto:library@northeaststate.edu?subject=Mobile Ask-A-Librarian" onclick="checkConnection();">Email</a></li>
-            <li><a href="#" onClick="window.plugins.childBrowser.showWebPage('http://www.espn.com', { showLocationBar: true });">ESPN</a></li>
-            <li><a href="#" onClick="window.plugins.childBrowser.showWebPage('http://www.nfl.com', { showLocationBar: true });">NFL</a></li>
                       </ul>
                       </div><!-- /content -->
                       
