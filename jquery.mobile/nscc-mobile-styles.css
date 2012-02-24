@@ -1,0 +1,77 @@
+/* nscc-mobile-styles.css                                        */
+/* Northeast State Library specific styles for mobile website    */
+/* by Chris Demas                                                */
+
+/* Used for the pubDate on the news feed */
+span.pubDate {
+	font-size: .7em;
+	display: block;
+	padding-left: 20px;
+}
+
+.mapImage {
+	/*width: 100%;*/
+	text-align: center;
+	
+}
+
+/* Used for the sub-headings under the Off-Campus Sites -> Kingsport */
+li p {
+	padding-left: 10px;
+	padding-top: 10px;
+
+}
+
+
+
+/* Makes the banner image auto-resizable for any phone.  Will not let the max-width get bigger than the original size */
+img.banner {
+	width: 100%;
+	max-width: 300px;
+
+}
+
+
+/* Controls the text link at the bottom of the frontpage "Northeast State Community College" */
+#bottomName {
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+}
+
+/* Used to center the button on the footer of the Article page in the News Section */
+.center-wrapper{
+text-align: center;
+}
+.center-wrapper * {
+margin: 0 auto;
+}
+
+/* For the information text at the top in the Campus Directory Sections */
+.dirtext {
+	margin-left: 20px;
+}
+
+/* For the location text in the Campus Directory Section */
+.loctext {
+	text-align: center;
+}
+
+.loctext h4 {
+	margin-bottom: 5px;;
+}
+
+/* For the information text at the top in the Campus Directory Sections */
+.sitesblurb {
+	margin-left: 20px;
+}
+
+#nonbreakingspace {
+    display: none;
+}
+
+/* fix for the flicker */
+.ui-page {
+    -webkit-backface-visibility: hidden;
+}
