@@ -3,7 +3,7 @@
 	xmlns:gap		= "http://phonegap.com/ns/1.0"
 	id				= "com.phonegap.northeaststate"
 	versionCode		= "93"
-	version 		= "1.4.1">
+	version 		= "1.5.0">
 
 	<name>NE State 2</name>
 
